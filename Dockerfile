@@ -10,6 +10,7 @@ ENV APACHE_RUN_USER=www-data \
 
 COPY etc/apache2/mods-enabled/rewrite.load /etc/apache2/mods-enabled/rewrite.load
 COPY etc/apache2/sites-enabled/site.conf /etc/apache2/sites-enabled/site.conf
+COPY etc/apache2/apache2.conf /etc/apache2/apache2.conf
 COPY src/ /var/www/html/
-EXPOSE 80
-EXPOSE 443
+EXPOSE 30081
+EXPOSE 30444
